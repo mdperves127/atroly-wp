@@ -1,0 +1,90 @@
+
+---Upload files---
+Customizer file was not uploaded. Error: Sorry, you are not allowed to upload this file type.
+
+---Upload files---
+Redux file was not uploaded. Error: No file provided.
+
+---Upload files---
+The import files were successfully uploaded!
+Initial max execution time = 36000
+Files info:
+Site URL = http://localhost/wp/atroly
+Data file = D:\laragon\www\wp\atroly/wp-content/uploads/2025/08/contents-demo-1.xml
+Widget file = D:\laragon\www\wp\atroly/wp-content/uploads/2025/08/widget-settings-1.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+---Importing widgets---
+campaigns-sidebar : Sidebar does not exist in theme (moving widget to Inactive)
+
+Block - No Title - Widget already exists
+Block - No Title - Widget already exists
+
+Blog Sidebar : 
+
+Search - No Title - Imported
+Categories - Categories - Imported
+tp-latest-posts - Recent Post - Site does not support widget
+Custom HTML - No Title - Imported
+Tag Cloud - Tags - Imported
+
+tp-services-sidebar : Sidebar does not exist in theme (moving widget to Inactive)
+
+tp-services-list - Our service - Site does not support widget
+Custom HTML - No Title - Widget already exists
+Custom HTML - No Title - Widget already exists
+
+Footer 1 : 
+
+Custom HTML - No Title - Imported
+
+Footer 2 : 
+
+Navigation Menu - Quick links - Imported
+
+Footer 3 : 
+
+tp-latest-posts-footer-no-thumb - Popular Post - Site does not support widget
+
+Footer 4 : 
+
+Custom HTML - Newsletter - Widget already exists
+
+Footer Style 2 : 1 : 
+
+Custom HTML - No Title - Widget already exists
+
+Footer Style 2 : 2 : 
+
+Navigation Menu - Quick links - Imported
+
+Footer Style 2 : 3 : 
+
+tp-latest-posts-footer-no-thumb - Popular Post - Site does not support widget
+
+Footer Style 2 : 4 : 
+
+Custom HTML - Contact us - Widget already exists
+
+Footer Style 3 : 1 : 
+
+Custom HTML - No Title - Widget already exists
+
+Footer Style 3 : 2 : 
+
+Navigation Menu - Useful Links - Imported
+
+Footer Style 3 : 3 : 
+
+Navigation Menu - More Service - Imported
+
+Footer Style 3 : 4 : 
+
+tp-latest-posts-footer-no-thumb - Popular Post - Site does not support widget
+
+
+
+---ocdi/after_import---
+

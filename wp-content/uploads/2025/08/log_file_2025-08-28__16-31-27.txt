@@ -1,0 +1,149 @@
+
+---Upload files---
+Widget file was not uploaded. Error: No file provided.
+
+---Upload files---
+Customizer file was not uploaded. Error: No file provided.
+
+---Upload files---
+Redux file was not uploaded. Error: No file provided.
+
+---Upload files---
+The import files were successfully uploaded!
+Initial max execution time = 36000
+Files info:
+Site URL = http://localhost/wp/atroly
+Data file = D:\laragon\www\wp\atroly/wp-content/uploads/2025/08/contents-demo.xml
+Widget file = not defined!
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+[WARNING] Failed to import portfolios-cat Fintech
+[WARNING] Failed to import portfolios-cat Investing
+[WARNING] Failed to import elementor_library_type landing-page
+[WARNING] Failed to import portfolios-cat Marketing
+[WARNING] Failed to import elementor_library_type page
+[WARNING] Failed to import portfolios-cat Planning
+[WARNING] Failed to import elementor_library_type section
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "svg-1" (Media)
+[ERROR] Failed to import "svg-2" (Media)
+[ERROR] Failed to import "svg-3" (Media)
+[ERROR] Failed to import "svg-2" (Media)
+[ERROR] Failed to import "svg-1" (Media)
+[ERROR] Failed to import "svg-3" (Media)
+
+
+------
+New AJAX call!
+[WARNING] Failed to import portfolios-cat Fintech
+[WARNING] Failed to import portfolios-cat Investing
+[WARNING] Failed to import elementor_library_type landing-page
+[WARNING] Failed to import portfolios-cat Marketing
+[WARNING] Failed to import elementor_library_type page
+[WARNING] Failed to import portfolios-cat Planning
+[WARNING] Failed to import elementor_library_type section
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-3" (Media)
+
+
+------
+New AJAX call!
+[WARNING] Failed to import portfolios-cat Fintech
+[WARNING] Failed to import portfolios-cat Investing
+[WARNING] Failed to import elementor_library_type landing-page
+[WARNING] Failed to import portfolios-cat Marketing
+[WARNING] Failed to import elementor_library_type page
+[WARNING] Failed to import portfolios-cat Planning
+[WARNING] Failed to import elementor_library_type section
+[ERROR] Failed to import "dollar" (Media)
+[ERROR] Failed to import "marketing" (Media)
+[ERROR] Failed to import "dollar" (Media)
+[ERROR] Failed to import "marketing" (Media)
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-3" (Media)
+[ERROR] Failed to import "icon-4" (Media)
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-3" (Media)
+[ERROR] Failed to import "icon-4" (Media)
+[ERROR] Failed to import "arrow-1" (Media)
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-3" (Media)
+[ERROR] Failed to import "icon-4" (Media)
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-3" (Media)
+[ERROR] Failed to import "icon-4" (Media)
+[ERROR] Failed to import "img-shape" (Media)
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-3" (Media)
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-3" (Media)
+
+
+------
+New AJAX call!
+[WARNING] Failed to import portfolios-cat Fintech
+[WARNING] Failed to import portfolios-cat Investing
+[WARNING] Failed to import elementor_library_type landing-page
+[WARNING] Failed to import portfolios-cat Marketing
+[WARNING] Failed to import elementor_library_type page
+[WARNING] Failed to import portfolios-cat Planning
+[WARNING] Failed to import elementor_library_type section
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-3" (Media)
+[ERROR] Failed to import "icon-4" (Media)
+[ERROR] Failed to import "arrow-1" (Media)
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-3" (Media)
+[ERROR] Failed to import "icon-4" (Media)
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-3" (Media)
+[ERROR] Failed to import "dollar" (Media)
+[ERROR] Failed to import "marketing" (Media)
+[ERROR] Failed to import "icon-1" (Media)
+[ERROR] Failed to import "icon-2" (Media)
+[ERROR] Failed to import "icon-3" (Media)
+
+
+------
+New AJAX call!
+[WARNING] Failed to import portfolios-cat Fintech
+[WARNING] Failed to import portfolios-cat Investing
+[WARNING] Failed to import elementor_library_type landing-page
+[WARNING] Failed to import portfolios-cat Marketing
+[WARNING] Failed to import elementor_library_type page
+[WARNING] Failed to import portfolios-cat Planning
+[WARNING] Failed to import elementor_library_type section
+
+
+------
+New AJAX call!
+[WARNING] Failed to import portfolios-cat Fintech
+[WARNING] Failed to import portfolios-cat Investing
+[WARNING] Failed to import elementor_library_type landing-page
+[WARNING] Failed to import portfolios-cat Marketing
+[WARNING] Failed to import elementor_library_type page
+[WARNING] Failed to import portfolios-cat Planning
+[WARNING] Failed to import elementor_library_type section
+[WARNING] Failed to import "Default Kit": Invalid post type elementor_library
+
+
+---ocdi/after_import---
+

@@ -1,0 +1,19 @@
+/*!
+Theme Name: Atroly
+Theme URI: https://creativehunk.com
+Author: creative-hunk
+Author URI: https://themeforest.net/user/creative-hunk
+Description: Atroly - Attoriel - Law Firm WordPress Theme 
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: atroly
+Tested up to: 6.6 Requires PHP: 7.4 or later
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.atroly-black-bg{
+	background-color: #16243E;
+}

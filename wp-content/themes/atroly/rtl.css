@@ -1,0 +1,951 @@
+/* /////////////////////////////////////////////////// */
+/* -------------------home 1--------------------- */
+/* /////////////////////////////////////////////////// */
+.atroly-header-top-info a span {
+	margin-right: 0;
+	margin-left: 8px;
+}
+.atroly-header-top-right .header-social a {
+	margin-left: 0;
+	margin-right: 24px;
+}
+.atroly-main-menu ul li.has-dropdown > a::after {
+	margin-left: 0;
+	margin-right: 6px;
+}
+.atroly-main-menu ul li:not(:last-of-type) {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.atroly-main-menu-mobile ul li.has-dropdown > a .dropdown-toggle-btn {
+	right: auto;
+	left: 0;
+}
+.atroly-header-logo-bg {
+  right: 0;
+	left: auto;
+	clip-path: polygon(0px 0px, 100% 0px, 100.57% 100.79%, 24% 100%);
+}
+.atroly-header-main-menu {
+	padding-left: 0;
+	padding-right: 90px;
+}
+.atroly-header-top {
+	padding-right: 120px;
+	padding-left: 70px;
+}
+.atroly-main-menu ul li .submenu {
+	left: auto;
+	right: 0;
+}
+.atroly-main-menu ul li .submenu li a::before {
+	left: auto;
+	right: 0;
+}
+.atroly-main-menu ul li .submenu li:hover > a span {
+	margin-left: 0;
+	margin-right: 14px;
+}
+.atroly-header-contact-search span {
+	margin-right: 0;
+	margin-left: 25px;
+}
+.atroly-header-contact-icon span {
+	margin-right: 0;
+	margin-left: 13px;
+}
+.atroly-header-main-right {
+	padding-right: 0;
+	padding-left: 30px;
+}
+.atroly-hero-button-wrapper .atroly-hero-btn {
+	margin-right: 0;
+	margin-left: 30px;
+}
+.atroly-hero-call span {
+	margin-right: 0;
+	margin-left: 17px;
+}
+.atroly-about-shape {
+	right: auto;
+	left: 0;
+}
+.atroly-about-thumb-wrapper .shape-1 {
+  right: auto;
+  left: 32px;
+}
+.atroly-about-thumb-wrapper .shape-2 {
+	left: auto;
+	right: -90px;
+}
+.atroly-about-thumb-wrapper .shape-3 {
+	right: auto;
+	left: 30px;
+}
+.atroly-about-thumb-wrapper .shape-4 {
+	right: auto;
+	left: 20px;
+}
+.atroly-service-nav {
+	float: left;
+}
+.atroly-service-nav button {
+right: -60px;
+}
+
+.atroly-service-nav button.service-button-next-1 {
+  right: -135px;
+} 
+.atroly-service-item-icon span {
+	right: auto;
+	left: 38px;
+}
+.atroly-project-tab-wrapper .nav-pills .nav-item:not(:last-of-type) {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.atroly-process-item-icon {
+	border-left: none;
+	border-right: 2px solid #E3E3E3;
+}
+.atroly-process-trusted {
+	right: auto;
+	left: 95px;
+}
+.atroly-blog-item-btn a i {
+	margin-right: 0;
+	margin-left: 8px;
+}
+.atroly-process-counter-icon span {
+	margin-right: auto;
+	margin-left: 12px;
+}
+.atroly-process-thumb .shape-1 {
+	right: auto;
+	left: 0;
+}
+.atroly-faq-counter-icon span {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.atroly-faq-counter {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.atroly-accordion .accordion-button::after {
+	right: auto;
+	left: 21px;
+}
+.atroly-accordion .accordion-button {
+	padding-right: 30px;
+	padding-left: 65px;
+}
+.atroly-testimonial-bg {
+	right: auto;
+	left: 0;
+}
+.atroly-testimonial-bg-color::after {
+	right: auto;
+	left: 0;
+	clip-path: polygon(-0.46% 0%, 58.72% -0.05%, 100% 100%, 0% 100%);
+}
+.atroly-testimonial-item-quot {
+	right: auto;
+	left: 40px;
+}
+.atroly-blog-item-date {
+	right: auto;
+	left: 25px;
+}
+.atroly-blog-item-info span {
+	margin-right: 0;
+	margin-left: 40px;
+}
+.atroly-blog-item-info span i {
+	margin-right: 0;
+	margin-left: 5px;
+}
+.atroly-blog-item-btn::after {
+	left: auto;
+	right: 0;
+}
+.atroly-footer-widget-social a {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.atroly-footer-widget-content ul li::after {
+	left: auto;
+	right: -15px;
+}
+.atroly-footer-col-2 {
+	padding-left: 0;
+	padding-right: 45px;
+}
+.atroly-footer-col-3 {
+	padding-left: 0;
+	padding-right: 45px;
+}
+.atroly-footer-widget-contact-inner a {
+	margin-left: 0;
+	margin-right: 20px;
+}
+.atroly-footer-widget-contact-inner a i {
+	left: auto;
+	right: -25px;
+}
+.atroly-footer-widget-item span i {
+	margin-right: 0;
+	margin-left: 5px;
+}
+.atroly-cta-bg-wrapper {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.atroly-footer-copyright-area {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .atroly-header-main-menu {
+    padding-left: 0;
+    padding-right: 60px;
+  }
+  .atroly-header-contact-search span {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .atroly-header-main-menu {
+    padding-left: 0;
+    padding-right: 35px;
+  }
+  .atroly-main-menu ul li:not(:last-of-type) {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .atroly-blog-item-info span {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .atroly-footer-col-2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .atroly-footer-col-3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .atroly-header-main-right {
+    padding-right: 0;
+    padding-left: 0px;
+  }
+  .atroly-footer-col-1 {
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 575px) {
+  .atroly-blog-item-info span {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .atroly-footer-col-1 {
+    padding-right: 0;
+  }
+  .atroly-footer-col-2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .atroly-footer-col-3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .atroly-footer-col-2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .atroly-footer-col-3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 575px) {
+  .offcanvas__close {
+    right: auto;
+    left: 20px;
+  }
+}
+
+/* /////////////////////////////////////////////////// */
+/* -------------------home 2--------------------- */
+/* /////////////////////////////////////////////////// */
+.atroly-hero-button-wrapper-2 .atroly-hero-btn {
+	margin-right: 0;
+	margin-left: 30px;
+}
+.atroly-hero-call-2 span {
+	margin-right: 0;
+	margin-left: 17px;
+}
+.atroly-hero-img-1 {
+	padding-right: 0;
+	padding-left: 18px;
+}
+.atroly-about-progressbar .circular .knob {
+	margin-left: 0px !important;
+	margin-right: -100px !important;
+}
+.atroly-about-thumb-wrapper-2 .img-1 {
+	margin-left: 0;
+	margin-right: -30px;
+}
+.atroly-about-thumb-wrapper-2 .img-2 {
+	right: auto;
+	left: 20px;
+}
+.atroly-about-progressbar {
+	right: auto;
+	left: 45px;
+}
+.atroly-about-thumb-wrapper-2 .img-3 {
+	left: auto;
+	right: -60px;
+}
+.atroly-about-item-2-inner:not(:last-of-type) {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.atroly-footer-copyright-inner a:not(:last-of-type) {
+	margin-right: 0;
+	margin-left: 30px;
+}
+.atroly-hero-content-3 {
+	text-align: right;
+}
+.atroly-about-item-2-icon {
+	margin-right: 0;
+	margin-left: 25px;
+}
+.atroly-about-btn-2 {
+	margin-right: 0;
+	margin-left: 50px;
+}
+.atroly-about-user-thumb {
+	margin-right: 0;
+	margin-left: 18px;
+}
+.atroly-service-icon-2 {
+	right: auto;
+	left: 45px;
+}
+.atroly-service-content-2 {
+	padding: 40px 30px 55px 80px;
+}
+.atroly-service-content-2 p::after {
+	left: auto;
+	right: 0;
+}
+.atroly-process-item-icon-2 span i {
+	left: auto;
+	right: -8px;
+}
+.atroly-process-arrows .shape-1 {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+.atroly-process-arrows .shape-2 {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+.atroly-process-arrows .shape-3 {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+.atroly-testimonial-nav-2 {
+	float: left;
+}
+.atroly-testimonial-nav-2 button {
+	right: -60px;
+}
+.atroly-testimonial-nav-2 button.testimonial-button-next-1 {
+	right: auto;
+	left: 76px;
+}
+.atroly-testimonial-quote {
+	right: auto;
+	left: 35px;
+}
+.atroly-testimonial-content-2 {
+	padding: 35px 20px;
+}
+.atroly-counter-icon span {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.atroly-counter-bg::after {
+	left: auto;
+	right: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+.atroly-contact-form .wide {
+	text-align: right !important;
+}
+.atroly-contact-form .wide::after {
+	right: auto;
+	left: 36px;
+}
+.nice-select .option {
+	text-align: right;
+}
+.atroly-blog-item-date-2 span {
+	right: auto;
+	left: 0px;
+	border-radius: 0px 5px 5px 0px;
+}
+.atroly-blog-item-thumb-2 img {
+	width: 100%;
+}
+.atroly-footer-2-col-1 {
+	padding-right: 0;
+	padding-left: 22px;
+}
+.atroly-footer-2-col-2 {
+	padding-left: 0;
+	padding-right: 16px;
+}
+.atroly-hero-shape-2 .shape-1 {
+	right: auto;
+	left: 0;
+}
+.offcanvas__close {
+	right: auto;
+	left: 30px;
+}
+.offcanvas__contact-content-icon i {
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .atroly-about-thumb-wrapper-2 .img-1 {
+    margin-left: 0;
+    margin-right: 0px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .atroly-service-content-2 {
+    padding: 40px 30px 55px 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .atroly-service-content-2 {
+    padding: 40px 28px 55px 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .atroly-testimonial-quote {
+    right: auto;
+    left: 10px;
+  }
+}
+.atroly-header-top-info-3 ul li:not(:last-of-type) {
+	margin-right: 0;
+	margin-left: 33px;
+}
+.atroly-main-menu.home-3 {
+	padding-left: 0;
+	padding-right: 36px;
+	margin-right: 0;
+}
+.atroly-header-top-info-3 ul li a span {
+	margin-right: 0;
+	margin-left: 8px;
+}
+.atroly-header-top-social-3 {
+	margin-right: 0;
+	margin-left: 110px;
+}
+.atroly-header-wrapper-3 {
+	padding-right: 0;
+	margin-left: 0;
+	padding-left: 40px;
+	margin-right: 50px;
+}
+.atroly-header-box-3 {
+	padding-left: 0;
+	padding-right: 50px;
+}
+.atroly-hero-thumb-main-3 {
+	right: auto;
+	left: 0;
+}
+.atroly-header-contact-inner-3 {
+	padding-right: 0;
+	margin-right: 0;
+	border-right: 0;
+	padding-left: 50px;
+	margin-left: 50px;
+	border-left: 1px solid #C0C8D2;
+}
+.atroly-header-icon-3 {
+	margin-right: 0;
+	margin-left: 15px;
+}
+.atroly-header-contact-search-3 span {
+	margin-right: 0;
+	margin-left: 40px;
+}
+.atroly-hero-thumb-3 {
+	-webkit-mask-image: none;
+}
+.atroly-about-item-icon-3 span {
+	margin-right: 0;
+	margin-left: 30px;
+}
+.atroly-about-btn-3 {
+	margin-left: 80px;
+	margin-right: 0;
+}
+.atroly-about-video a span {
+	margin-right: 0;
+	margin-left: 15px;
+}
+.atroly-about-thumb-wrapper-3 .shape {
+	right: auto;
+	left: 60px;
+}
+.atroly-about-thumb-wrapper-3 .shape-2 {
+	right: auto;
+	left: 51%;
+	z-index: 1;
+}
+.atroly-about-thumb-counter {
+	left: auto;
+	right: 20%;
+}
+.atroly-service-item-number {
+	right: auto;
+	left: 50px;
+}
+.atroly-support-thumb .main {
+	padding-right: 0;
+	padding-left: 40px;
+}
+.atroly-support-count {
+	left: auto;
+	right: 0;
+}
+.atroly-support-count .circular .knob {
+	margin-right: -107px;
+	margin-left: 0;
+}
+.atroly-support-wrapper-inner ul li {
+	padding-left: 0;
+	padding-right: 40px;
+}
+.atroly-support-wrapper-inner ul li i {
+	left: auto;
+	right: 0;
+}
+.atroly-testimonial-user-3-thumb img {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.atroly-contact-wrapper-2 {
+	padding-left: 0;
+	padding-right: 70px;
+}
+.atroly-blog-item-info-3 span:not(:last-of-type) {
+	margin-right: 0;
+	margin-left: 25px;
+}
+.atroly-blog-item-info-3 span i {
+	margin-right: 0;
+	margin-left: 5px;
+}
+.atroly-about-item-3 {
+	margin-left: 25px;
+	margin-right: 0;
+}
+.atroly-blog-item-btn-3 a span {
+	margin-left: 0;
+	margin-right: 5px;
+}
+.atroly-footer-subscribe-wrapper-title span {
+	margin-right: 0;
+	margin-left: 20px;
+}
+.atroly-footer-subscribe-email span {
+	left: auto;
+	right: 0;
+}
+.atroly-footer-info-call a i, .atroly-footer-info-mail a i {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.atroly-footer-3-col-2 .atroly-footer-widget-content ul li {
+	margin-left: 0;
+	margin-right: 25px;
+}
+.atroly-footer-3-col-2 {
+	padding-left: 0;
+	padding-right: 110px;
+}
+.atroly-footer-3-col-2 .atroly-footer-widget-content ul li a i {
+	left: auto;
+	right: -23px;
+}
+.atroly-footer-3-col-3 {
+	padding-left: 0;
+	padding-right: 45px;
+}
+.atroly-footer-3-col-3 .atroly-footer-widget-content ul li a i {
+	left: auto;
+	right: -23px;
+}
+.atroly-blog-item-btn-2 a span {
+	margin-left: 0;
+	margin-right: 5px;
+}
+.atroly-footer-3-col-3 .atroly-footer-widget-content ul li {
+	margin-left: 0;
+	margin-right: 25px;
+}
+@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+  .atroly-header-contact-inner-3 {
+    margin-left: 40px;
+    padding-left: 40px;
+  }
+	.atroly-header-box-3 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+	.atroly-header-box-3 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.atroly-header-wrapper-3 {
+		padding-right: 0;
+		margin-left: 0;
+		padding-left: 0;
+		margin-right: 40px;
+	}
+	.atroly-header-contact-inner-3 {
+		padding-left: 12px;
+		margin-left: 12px;
+	}
+	.atroly-header-contact-search-3 span {
+		margin-right: 0;
+		margin-left: 15px;
+	}
+	.atroly-header-top-social-3 {
+		margin-right: 0;
+		margin-left: 20px;
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	.atroly-header-box-3 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.atroly-header-top-social-3 {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.atroly-header-top-info-3 ul li:not(:last-of-type) {
+		margin-right: 0;
+		margin-left: 10px;
+	}
+	.atroly-header-wrapper-3 {
+		margin-right: 40px;
+	}
+	.atroly-main-menu.home-3 {
+		padding-right: 20px;
+	}
+	.atroly-header-contact-search-3 span {
+		margin-left: 20px;
+	}
+	.atroly-about-item-3{
+		margin-right: 0;
+	}
+	.atroly-contact-wrapper-2 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.atroly-footer-3-col-2 {
+		padding-left: 0;
+		padding-right: 85px;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .atroly-main-menu.home-3 {
+    padding-right: 0;
+  }
+	.atroly-header-box-3 {
+		padding-right: 0px;
+	}
+	.atroly-header-wrapper-3 {
+		padding-right: 30px;
+		margin-right: 0;
+	}
+	.atroly-header-main-right-hamburger-btn {
+		width: 0;
+	}
+	.atroly-header-main-right-3 {
+    padding-left: 0;
+    padding-right: 90%;
+  }
+	.atroly-about-item-3{
+		margin-right: 0;
+	}
+	.atroly-about-btn-3 {
+		margin-left: 15px;
+	}
+	.atroly-contact-wrapper-2 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.atroly-footer-3-col-2 {
+		padding-left: 0;
+		padding-right: 80px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+	.atroly-contact-wrapper-2 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.atroly-footer-3-col-2 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.atroly-footer-3-col-3 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+	.atroly-contact-wrapper-2 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.atroly-footer-3-col-3 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media (max-width: 575px) {
+	.atroly-footer-3-col-2 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.atroly-service-widget-list-content ul li {
+	margin-left: 0;
+	margin-right: 30px;
+}
+.atroly-service-widget-list-content ul li i {
+	right: -30px;
+	left: auto;
+}
+.atroly-service-details-item {
+	margin-right: 0;
+	margin-left: 30px;
+}
+.atroly-service-details-icon {
+	right: auto;
+	left: 30px;
+}
+.atroly-service-details-box-content {
+	margin-right: 0;
+	margin-left: 30px;
+}
+.atroly-service-details-subtitle-2::before {
+	left: auto;
+	right: 0;
+}
+.atroly-service-widget-tab ul li.active a::before {
+	left: auto;
+	right: -30px;
+}
+.atroly-service-widget-tab ul li a::before {
+	left: auto;
+	right: -30px;
+}
+.atroly-service-details-title {
+	margin-left: 0;
+	margin-right: 20px;
+}
+.atroly-service-details-title::before {
+	left: auto;
+	right: -20px;
+}
+.atroly-project-details-title {
+	margin-left: 0;
+	margin-right: 20px;
+}
+.atroly-project-details-title::after {
+	top: 10px;
+	left: auto;
+	right: -20px;
+}
+.atroly-project-details-box-1 {
+	margin-right: 0;
+	margin-left: 50px;
+}
+.atroly-project-details-list-title i {
+	margin-right: 0;
+	margin-left: 5px;
+}
+.atroly-project-details-box {
+	left: 20px;
+	right: auto;
+}
+.atroly-project-details-title-wrapper {
+	padding-right: 0;
+	padding-left: 34%;
+}
+@media (max-width: 575px) {
+	.atroly-project-details-title-wrapper {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+.atroly-team-details-information h4 a {
+	margin-left: 0;
+	margin-right: 100px;
+}
+.atroly-team-details-information span {
+	left: auto;
+	right: 0;
+}
+.atroly-team-details-social a {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.atroly-team-details-value ul li {
+	margin-left: 0;
+	margin-right: 25px;
+}
+.atroly-team-details-value ul li i {
+	left: auto;
+	margin-right: 0;
+	right: -25px;
+	margin-left: 8px;
+}
+.atroly-team-details-progress-title h5 .pursent-1 {
+	right: auto;
+	left: 32%;
+}
+.atroly-team-details-progress-title h5 .pursent-2 {
+	position: absolute;
+	top: 0;
+	right: auto;
+	left: 28%;
+}
+.atroly-team-details-progress-title h5 .pursent-3 {
+	right: auto;
+	left: 35%;
+}
+.atroly-postbox-thumb-date {
+	left: auto;
+	right: 20px;
+}
+.atroly-sidebar-widget-content ul li a i {
+	margin-right: 0;
+	margin-left: 2px;
+}
+.atroly-rc__post-thumb {
+	margin-left: 25px;
+	margin-right: 0;
+}
+.atroly-postbox-meta span {
+	margin-right: 0;
+	margin-left: 24px;
+}
+.atroly-postbox-meta span i {
+	margin-right: 0;
+	margin-left: 5px;
+}
+.atroly-postbox-meta2 span:not(:last-of-type) {
+	margin-right: 0;
+	margin-left: 30px;
+}
+.atroly-postbox-meta2 span i {
+	margin-right: 0;
+	margin-left: 2px;
+}
+.atroly-postbox-list {
+	margin-left: 40px;
+	margin-right: 0;
+}
+blockquote::after {
+	left: auto;
+	right: 0;
+}
+.atroly-postbox-comment ul li .atroly-postbox-comment-reply {
+	right: auto;
+	left: 0;
+}
+.atroly-postbox-comment ul li.children {
+	margin-left: 0;
+	margin-right: 110px;
+}
+.atroly-postbox-comment ul li .atroly-postbox-comment-name {
+	margin-right: 0;
+	margin-left: 30px;
+}
+.atroly-postbox-comment ul li .atroly-postbox-comment-avater {
+	margin-right: 0;
+	margin-left: 30px;
+}
+.atroly-postbox-reply-title::after {
+	left: auto;
+	right: 0;
+}
+.atroly-postbox-comment ul li .atroly-postbox-comment-reply a i {
+	margin-left: 0;
+	margin-right: 8px;
+}
+.tagcloud a {
+	margin-right: 0;
+	margin-left: 10px;
+}
+.atroly-contact-breadcrumb-item {
+	padding: 34px 30px 30px 105px;
+}
+.atroly-contact-breadcrumb-item-icon {
+	margin-right: 0;
+	margin-left: 30px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.atroly-postbox-meta2 span:not(:last-of-type) {
+		margin-right: 0;
+		margin-left: 20px;
+	}
+	
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+	.atroly-postbox-comment ul li.children {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.atroly-postbox-meta2 span:not(:last-of-type) {
+		margin-right: 0;
+		margin-left: 10px;
+	}
+}
+@media (max-width: 575px) {
+	.atroly-postbox-comment ul li.children {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
