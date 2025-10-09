@@ -30,14 +30,23 @@ if ( is_single() ) : ?>
                 'link_after'  => '</span>',
             ] );
         ?>
-     <div class="atroly-postbox-share-wrapper">
-         <div class="row">
-             <div class=" <?php echo esc_attr($social_shear_col); ?>">
-                 <?php echo atroly_get_tag(); ?>
-             </div>
-             <?php atroly_blog_social_share() ?>
-         </div>
-     </div>
+        <?php if(has_tag()) : ?>
+         <div class="chunk-blog__footer wow animate__animated animate__fadeInUp">
+            <div class="chunk-blog__tags">
+                <h3>
+                    <?php echo esc_html__('Tags', 'atroly'); ?>
+                </h3>
+                <div class="chunk-sidebar__tag-wrap">
+                <?php echo atroly_get_tag(); ?>
+                </div>
+            </div>
+    
+            <div class="chunk-blog__share">
+                <h3><?php echo esc_html__('Share', 'atroly'); ?></h3>
+                <?php atroly_blog_social_share(); ?>
+            </div>
+        </div>
+         <?php endif; ?>
  </article>
 <?php else: ?>
 

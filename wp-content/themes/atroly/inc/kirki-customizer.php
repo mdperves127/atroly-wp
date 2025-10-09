@@ -28,7 +28,7 @@ function header_top_section()
     new \Kirki\Field\Radio_Image(
         [
             'settings' => 'header_layout_custom',
-            'label' => esc_html__('Chose Header Style', 'atroly'),
+            'label' => esc_html__('Choose Header Style', 'atroly'),
             'section' => 'header_top_section',
             'priority' => 10,
             'choices' => [
@@ -51,6 +51,13 @@ function header_top_section()
             'choices' => [
                 'on' => esc_html__('Enable', 'atroly'),
                 'off' => esc_html__('Disable', 'atroly'),
+            ],
+            'active_callback' => [
+                [
+                    'setting' => 'header_layout_custom',
+                    'operator' => 'in',
+                    'value' => ['header_3', 'header_4'],
+                ],
             ],
         ]
     );
@@ -132,7 +139,7 @@ function header_top_section()
             'settings' => 'header_button_text',
             'label' => esc_html__('Button Text', 'atroly'),
             'section' => 'header_top_section',
-            'default' => esc_html__('Book a Appointment', 'atroly'),
+            'default' => esc_html__('Book an Appointment', 'atroly'),
             'priority' => 10,
         ]
     );
@@ -190,70 +197,6 @@ function header_top_section()
 
 }
 header_top_section();
-
-
-// header_side_section
-function header_side_section()
-{
-    // header_top_bar section 
-    new \Kirki\Section(
-        'header_side_section',
-        [
-            'title' => esc_html__('Header Side Info', 'atroly'),
-            'description' => esc_html__('Header Side Information.', 'atroly'),
-            'panel' => 'panel_id',
-            'priority' => 110,
-        ]
-    );
-    // header_side_section section 
-
-    // header_side_logo_section 
-    new \Kirki\Field\Image(
-        [
-            'settings' => 'header_side_logo',
-            'label' => esc_html__('Header Side Logo', 'atroly'),
-            'description' => esc_html__('Header Side Default/Primary Logo Here', 'atroly'),
-            'section' => 'header_side_section',
-            'default' => get_template_directory_uri() . '/assets/images/logo/logo-black.png',
-        ]
-    );
-
-    new \Kirki\Field\Checkbox_Switch(
-        [
-            'settings' => 'header_side_info_switch',
-            'label' => esc_html__('Header Side Info Switch', 'atroly'),
-            'description' => esc_html__('Header Side Info switch On/Off', 'atroly'),
-            'section' => 'header_side_section',
-            'default' => 'off',
-            'choices' => [
-                'on' => esc_html__('Enable', 'atroly'),
-                'off' => esc_html__('Disable', 'atroly'),
-            ],
-        ]
-    );
-
-    new \Kirki\Field\Textarea(
-        [
-            'settings' => 'header_top_offcanvas_textarea',
-            'label' => esc_html__('Offcanvas About Us', 'atroly'),
-            'section' => 'header_side_section',
-            'default' => esc_html__('Web designing in a powerful way of just not an only professions. We have tendency to believe the idea that smart looking .', 'atroly'),
-        ]
-    );
-
-    // Contacts Text 
-    new \Kirki\Field\Text(
-        [
-            'settings' => 'header_side_contacts_text',
-            'label' => esc_html__('Contacts Text', 'atroly'),
-            'section' => 'header_side_section',
-            'default' => esc_html__('CONTACT US', 'atroly'),
-            'priority' => 10,
-        ]
-    );
-
-}
-header_side_section();
 
 // header_social_section
 function header_social_section()
@@ -435,21 +378,21 @@ function header_breadcrumb_section()
             'responsive' => true,
             'default' => [
                 'desktop' => [
-                    'padding-top' => '240px',
-                    'padding-bottom' => '140px',
+                    'padding-top' => '165px',
+                    'padding-bottom' => '160px',
                 ],
                 'tablet' => [
-                    'padding-top' => '240px',
-                    'padding-bottom' => '140px',
+                    'padding-top' => '60px',
+                    'padding-bottom' => '60px',
                 ],
                 'mobile' => [
-                    'padding-top' => '190px',
-                    'padding-bottom' => '100px',
+                    'padding-top' => '40px',
+                    'padding-bottom' => '40px',
                 ],
             ],
             'output' => [
                 [
-                    'element' => '.breadcrumb__area',
+                    'element' => '.breadcrumb',
                     'media_query' => [
                         'desktop' => '@media (min-width: 1024px)',
                         'tablet' => '@media (min-width: 768px) and (max-width: 1023px)',
@@ -714,6 +657,21 @@ function footer_layout_section()
             'priority' => 190,
         ]
     );
+    // footer_top_widget_number section 
+    new \Kirki\Field\Select(
+        [
+            'settings' => 'footer_top_widget_number',
+            'label' => esc_html__('Footer Top Widget Number', 'atroly'),
+            'section' => 'footer_layout_section',
+            'default' => '3',
+            'placeholder' => esc_html__('Choose an option', 'atroly'),
+            'choices' => [
+                '1' => esc_html__('1', 'atroly'),
+                '2' => esc_html__('2', 'atroly'),
+                '3' => esc_html__('3', 'atroly'),
+            ],
+        ]
+    );
     // footer_widget_number section 
     new \Kirki\Field\Select(
         [
@@ -768,6 +726,20 @@ function footer_layout_section()
             'default' => '#1D1E20',
         ]
     );
+    
+    new \Kirki\Field\Slider(
+        [
+            'settings' => 'footer_bg_opacity',
+            'label'    => __('Footer BG Opacity', 'atroly'),
+            'section'  => 'footer_layout_section',
+            'default'  => 0.8,
+            'choices'  => [
+                'min'  => 0.1,
+                'max'  => 1,
+                'step' => 0.1,
+            ],
+        ]
+    );
 
     new \Kirki\Field\Checkbox_Switch(
         [
@@ -775,7 +747,7 @@ function footer_layout_section()
             'label' => esc_html__('Footer Style 2 Switch', 'atroly'),
             'description' => esc_html__('Footer Style 2 On/Off', 'atroly'),
             'section' => 'footer_layout_section',
-            'default' => 'on',
+            'default' => 'off',
             'choices' => [
                 'on' => esc_html__('Enable', 'atroly'),
                 'off' => esc_html__('Disable', 'atroly'),
@@ -789,7 +761,7 @@ function footer_layout_section()
             'label' => esc_html__('Footer Style 3 Switch', 'atroly'),
             'description' => esc_html__('Footer Style 3 On/Off', 'atroly'),
             'section' => 'footer_layout_section',
-            'default' => 'on',
+            'default' => 'off',
             'choices' => [
                 'on' => esc_html__('Enable', 'atroly'),
                 'off' => esc_html__('Disable', 'atroly'),
@@ -803,7 +775,7 @@ function footer_layout_section()
             'label' => esc_html__('Footer Style 4 Switch', 'atroly'),
             'description' => esc_html__('Footer Style 4 On/Off', 'atroly'),
             'section' => 'footer_layout_section',
-            'default' => 'on',
+            'default' => 'off',
             'choices' => [
                 'on' => esc_html__('Enable', 'atroly'),
                 'off' => esc_html__('Disable', 'atroly'),
@@ -871,26 +843,6 @@ function footer_layout_section()
         ]
     );
 
-    new \Kirki\Field\text(
-        [
-            'settings' => 'footer_top_cta_title',
-            'label' => esc_html__('Footer Top Cta Title', 'atroly'),
-            'section' => 'footer_layout_section',
-            'default' => esc_html__('Footer Top Cta Title', 'atroly'),
-            'priority' => 10,
-        ]
-    );
-
-    new \Kirki\Field\textarea(
-        [
-            'settings' => 'footer_top_cta',
-            'label' => esc_html__('Footer Top Cta', 'atroly'),
-            'section' => 'footer_layout_section',
-            'default' => esc_html__('Footer Top Cta', 'atroly'),
-            'priority' => 10,
-        ]
-    );
-
 
 }
 footer_layout_section();
@@ -909,15 +861,6 @@ function blog_section()
         ]
     );
 
-    new \Kirki\Field\Checkbox_Switch(
-        [
-            'settings' => 'atroly_blog_btn_switch',
-            'label' => esc_html__('Blog BTN On/Off', 'atroly'),
-            'section' => 'blog_section',
-            'default' => true,
-            'priority' => 10,
-        ]
-    );
 
     // blog_section BTN 
     new \Kirki\Field\Checkbox_Switch(
@@ -963,6 +906,15 @@ function blog_section()
     );
 
 
+    new \Kirki\Field\Checkbox_Switch(
+        [
+            'settings' => 'atroly_blog_btn_switch',
+            'label' => esc_html__('Blog BTN On/Off', 'atroly'),
+            'section' => 'blog_section',
+            'default' => true,
+            'priority' => 10,
+        ]
+    );
     // blog_section Blog BTN text 
     new \Kirki\Field\Text(
         [
@@ -1070,7 +1022,7 @@ function theme_color_section()
             'label' => __('Theme Color 1', 'atroly'),
             'description' => esc_html__('this is theme color 1 control.', 'atroly'),
             'section' => 'theme_color_section',
-            'default' => '#00A3C3',
+            'default' => '#B98844',
         ]
     );
     new \Kirki\Field\Color(
@@ -1079,7 +1031,7 @@ function theme_color_section()
             'label' => __('Theme Color 2', 'atroly'),
             'description' => esc_html__('this is theme color 2 control.', 'atroly'),
             'section' => 'theme_color_section',
-            'default' => '#1C1E21',
+            'default' => '##003E42',
         ]
     );
     new \Kirki\Field\Color(

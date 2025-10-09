@@ -2,7 +2,7 @@
 /**
 	* Plugin Name: Atroly Core
 	* Description: Creative Hunk elementor core plugin.
-	* Plugin URI:  https://themepure.net/
+	* Plugin URI:  https://creativehunk.com/
 	* Version:     1.0.2
 	* Author:      creative-hunk
 	* Author URI:  https://creativehunk.com/

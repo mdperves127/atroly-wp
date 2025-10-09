@@ -16,7 +16,7 @@ if ( post_password_required() ) {
 
 <?php if ( have_comments() || comments_open()) : ?>
 
-<div id="comments" class="atroly-postbox-comment mb-60">
+<div id="comments" class="chunk-blog__comments wow animate__animated animate__fadeInUp">
     <?php if ( get_comments_number() >= 1 ): ?>
     <div class="post-comments-wrap mb-70">
         <div class="post-comment-title mb-40">
@@ -93,12 +93,7 @@ if ( post_password_required() ) {
     $defaults = [
         'fields'             => $fields,
         'comment_field'      => '
-            <div class="row post-input">
-                <div class="col-md-12 ' . $cl . '">
-                    <div class="postbox__comment-input"><textarea class="atroly-form-control msg-box" placeholder="'.  esc_attr__('Enter Your Comment', 'atroly').'" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
-                </div></div>
-                <div class="clearfix"></div>
-            </div>
+                    <textarea id="comment" name="comment" rows="5" placeholder="'.  esc_attr__('Enter Your Comment', 'atroly').'" aria-required="true"></textarea>
         ',
         'submit_button'    => '<button type="submit">' . esc_html__( 'Post Comment', 'atroly' ) . ' </button>',
         /** This filtwp-content/themes/atroly/incer is documented in wp-includes/link-template.php */
@@ -111,10 +106,10 @@ if ( post_password_required() ) {
             <p class="logged-in-as">
             '.esc_html__('Logged in as','atroly').' <a href="'.esc_url(get_edit_user_link()).'">'.esc_html($user_identity).'</a>. <a href="'.esc_url(wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) )).'" title="'.esc_attr__('Log out of this account','atroly').'">'.esc_html__('Log out?','atroly').'</a>
             </p>',
-        'id_form'            => 'commentform',
+        'id_form'            => 'chunk-comment-form',
         'id_submit'          => 'submit',
         'class_submit'       => '',
-        'title_reply'        => esc_html__( 'Write a comment', 'atroly' ),
+        'title_reply'        => esc_html__( 'Write a Comment', 'atroly' ),
         'title_reply_to'     => esc_html__( 'Leave a Reply to %s', 'atroly' ),
         'cancel_reply_link'  => esc_html__( 'Cancel reply', 'atroly' ),
         'label_submit'       => esc_html__( 'Post Comment', 'atroly' ),

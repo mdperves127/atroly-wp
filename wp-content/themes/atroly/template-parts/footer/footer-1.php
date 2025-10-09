@@ -19,14 +19,16 @@
     // theme
     $footer_bg_img = get_theme_mod( 'footer_bg_image' );
     $footer_bg_color = get_theme_mod( 'footer_bg_color', '#1D1E20' );
-    $theme_bg = $footer_bg_img ? "background-image:url({$footer_bg_img});" : "background-color:{$footer_bg_color};";
+    $footer_bg_opacity = get_theme_mod( 'footer_bg_opacity', 0.8 );
 
     // page
     $atroly_footer_bg_image = function_exists('tpmeta_image_field')? tpmeta_image_field('atroly_footer_bg_image') : '';
     $atroly_footer_bg_color = function_exists('tpmeta_field')? tpmeta_field('atroly_footer_bg_color') : '';
-    $validate_color = $atroly_footer_bg_color != '' ? $atroly_footer_bg_color : $footer_bg_color;
-    $page_bg = $atroly_footer_bg_image ? "background-image:url({$atroly_footer_bg_image['url']});" : "background-color:{$validate_color};";
-    $main_bg = $page_bg != '' ? $page_bg : $theme_bg;
+    $atroly_footer_bg_opacity = function_exists('tpmeta_field')? tpmeta_field('atroly_footer_bg_opacity') : '';
+
+    $footer_combine_color = $atroly_footer_bg_color != '' ? $atroly_footer_bg_color : $footer_bg_color;
+    $footer_combine_bg = $atroly_footer_bg_image != '' ? $atroly_footer_bg_image['url'] : $footer_bg_img;
+    $footer_combine_opacity = $atroly_footer_bg_opacity != '' ? $atroly_footer_bg_opacity : $footer_bg_opacity;
 
     // Email id 
    $header_top_email = get_theme_mod( 'header_email', __( 'atroly@support.com', 'atroly' ) );
@@ -45,11 +47,19 @@
 
     // footer_columns
     $footer_columns = 0;
+    $footer_top_columns = 0;
     $footer_widgets = get_theme_mod( 'footer_widget_number', 4 );
+    $footer_top_widgets = get_theme_mod( 'footer_top_widget_number', 3 );
 
     for ( $num = 1; $num <= $footer_widgets + 1; $num++ ) {
         if ( is_active_sidebar( 'footer-' . $num ) ) {
             $footer_columns++;
+        }
+    }
+
+    for ( $num = 1; $num <= $footer_top_widgets + 1; $num++ ) {
+        if ( is_active_sidebar( 'footer-top-' . $num ) ) {
+            $footer_top_columns++;
         }
     }
 
@@ -76,83 +86,94 @@
         $footer_class = 'col-xl-3 col-lg-3 col-md-6';
         break;
     }
+    switch ( $footer_top_columns ) {
+    case '1':
+        $footer_top_class[1] = 'col-lg-12';
+        break;
+    case '2':
+        $footer_top_class[1] = 'col-lg-6 col-md-6';
+        $footer_top_class[2] = 'col-lg-6 col-md-6';
+        break;
+    case '3':
+            $footer_top_class[1] = 'col-lg-4 col-md-4';
+            $footer_top_class[2] = 'col-lg-4 col-md-4';
+            $footer_top_class[3] = 'col-lg-4 col-md-4';
+            break;
+    }
 
 ?>
 
 
 <!-- footer -->
 <!-- Footer Start Here -->
-<footer class="footer-area bg--base-three overflow--hidden" style="<?php echo esc_attr($main_bg); ?>">
-    
-<?php if ( is_active_sidebar('footer-1') OR is_active_sidebar('footer-2') OR is_active_sidebar('footer-3') OR is_active_sidebar('footer-4') ): ?>
+<footer class="footer-area overflow--hidden" style="background: url(<?php echo esc_url($footer_combine_bg); ?>);">
+<div class="footer-bg-overlay" style="background: <?php echo esc_attr($footer_combine_color); ?>; opacity: <?php echo esc_attr($footer_combine_opacity); ?>;"></div>
+<?php if ( is_active_sidebar('footer-1') OR is_active_sidebar('footer-2') OR is_active_sidebar('footer-3') OR is_active_sidebar('footer-4') OR is_active_sidebar('footer-top-1') OR is_active_sidebar('footer-top-2') OR is_active_sidebar('footer-top-3') ): ?>
     <div class="footer-top pt-60">
         <div class="container">
+            <?php if ( is_active_sidebar('footer-top-1') OR is_active_sidebar('footer-top-2') OR is_active_sidebar('footer-top-3') ): ?>
             <div class="footer-logo--wrap">
                 <div class="row justify-content-between gy-4">
-                    <div class="col-md-auto wow animate__animated animate__fadeInUp">
+                <?php
+                    if ( $footer_top_columns < 4 ) {
+                    if ( isset( $footer_top_class[1] ) ) {
+                    print '<div class="' . esc_attr( $footer_top_class[1] ) . ' wow animate__animated animate__fadeInUp">';
+                    dynamic_sidebar( 'footer-top-1' );
+                    print '</div>';
+                    }
 
-                        <div class="chunk-footer-widget">
-                            <h3 class="footer-widget__title">
-                                Send Email
-                            </h3>
-                            <div class="footer-widget__content">
-                                <div class="footer-links">
-                                    <a href="mailto:contact@attroly.com">contact@attroly.com</a>
-                                </div>
-                            </div>
-                        </div>
+                    if ( isset( $footer_top_class[2] ) ) {
+                    print '<div class="' . esc_attr( $footer_top_class[2] ) . ' wow animate__animated animate__fadeInUp">';
+                    dynamic_sidebar( 'footer-top-2' );
+                    print '</div>';
+                    }
 
-                    </div>
-
-                    <div class="col footer-logo animate__animated animate__fadeInUp wow">
-
-                        <div class="chunk-footer-widget">
-                            <div class="footer-item--logo text-center">
-                                <a href="index.html" class="footer-logo-normal" id="footer-logo-normal">
-                                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo/logo-white.png" alt="image">
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-auto wow animate__animated animate__fadeInUp">
-
-                        <div class="chunk-footer-widget">
-                            <h3 class="footer-widget__title">
-                                Call Now
-                            </h3>
-                            <div class="footer-widget__content">
-                                <div class="footer-links">
-                                    <a href="tel:+88011665165156">+880 116651 65156</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
+                    if ( isset( $footer_top_class[3] ) ) {
+                    print '<div class="' . esc_attr( $footer_top_class[3] ) . ' wow animate__animated animate__fadeInUp">';
+                    dynamic_sidebar( 'footer-top-3' );
+                    print '</div>';
+                    }
+                    } else {
+                        for ( $num = 1; $num <= $footer_top_columns; $num++ ) {
+                            if ( !is_active_sidebar( 'footer-top-' . $num ) ) {
+                                continue;
+                            }
+                            print '<div class="' . esc_attr( $footer_top_class[$num] ) . '">';
+                            dynamic_sidebar( 'footer-top-' . $num );
+                            print '</div>';
+                        }
+                    }
+                ?>
                 </div>
             </div>
-
+            <?php endif; ?>
             <div class="footer--main--content">
                 <div class="row gy-4 justify-content-between">
-                    
                 <?php
                     if ( $footer_columns < 5 ) {
-                    print '<div class="col-xl-3 col-sm-6 wow animate__animated animate__fadeInUp">';
+                    if ( isset( $footer_class[1] ) ) {
+                    print '<div class="'.esc_attr( $footer_class[1] ).' wow animate__animated animate__fadeInUp">';
                     dynamic_sidebar( 'footer-1' );
                     print '</div>';
+                    }
 
-                    print '<div class="col-xl-auto col-sm-6 wow animate__animated animate__fadeInUp">';
+                    if ( isset( $footer_class[2] ) ) {
+                    print '<div class="'.esc_attr( $footer_class[2] ).' wow animate__animated animate__fadeInUp">';
                     dynamic_sidebar( 'footer-2' );
                     print '</div>';
+                    }
 
-                    print '<div class="col-xl-auto col-sm-6 wow animate__animated animate__fadeInUp">';
+                    if ( isset( $footer_class[3] ) ) {
+                    print '<div class="'.esc_attr( $footer_class[3] ).' wow animate__animated animate__fadeInUp">';
                     dynamic_sidebar( 'footer-3' );
                     print '</div>';
+                    }
 
-                    print '<div class="col-xl-3 col-sm-6 wow animate__animated animate__fadeInUp">';
+                    if ( isset( $footer_class[4] ) ) {
+                    print '<div class="'.esc_attr( $footer_class[4] ).' wow animate__animated animate__fadeInUp">';
                     dynamic_sidebar( 'footer-4' );
                     print '</div>';
+                    }
                     } else {
                         for ( $num = 1; $num <= $footer_columns; $num++ ) {
                             if ( !is_active_sidebar( 'footer-' . $num ) ) {
@@ -169,8 +190,8 @@
             </div>
         </div>
     </div>
-    
     <?php endif; ?>
+    
     <!-- Footer Top End-->
 
 <?php  if ( !empty( $footer_copyright_switch ) ): ?>

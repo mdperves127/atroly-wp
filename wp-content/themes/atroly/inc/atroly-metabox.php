@@ -66,6 +66,14 @@ function themepure_metabox( $meta_boxes ) {
 				'default' 	  => '#1C1E21',
 				'conditional' => array()
 			),
+			
+			array(
+				'label' => 'Footer Background Opacity',
+				'id'   	=> "{$prefix}_footer_bg_opacity",
+				'type' 	=> 'text',
+				'default' 	  => '',
+				'conditional' => array()
+			),
 
             // multiple buttons group field like multiple radio buttons
 			array(

@@ -5102,7 +5102,23 @@ button.mfp-close {
 /*----  Footer Section  ----*/
 .footer-area {
     position: relative;
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.footer-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* .chunk-footer-widget{
+    max-width: 312px;
+} */
 
 .chunk-footer-widget .footer-widget__title {
     font-size: 22px;
@@ -6004,6 +6020,9 @@ button.mfp-close {
     align-items: center;
     justify-content: center;
     gap: 12px;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    row-gap: 24px;
 }
 
 @media screen and (max-width: 991px) {
@@ -6284,6 +6303,14 @@ button.mfp-close {
     display: grid;
     place-items: center;
     background-color: hsl(var(--base-four));
+}
+
+.header--four .header-icon-link a .text{
+    margin-top: 5px;
+}
+.header--four .header-icon-link a .text span{
+    display: block;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 991px) {
@@ -6932,7 +6959,7 @@ button.mfp-close {
 .chunk-blog__thumb img,
 .chunk-practice__thumb img,
 .chunk-case__thumb img {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     object-fit: cover;
 }
@@ -7226,65 +7253,69 @@ button.mfp-close {
     margin-bottom: 30px;
 }
 
-.chunk-blog__comments h3 {
+.chunk-blog__comments .post-comment-title h3 {
     font-size: 22px;
 }
 
 @media screen and (max-width: 991px) {
-    .chunk-blog__comments h3 {
+    .chunk-blog__comments .post-comment-title h3 {
         font-size: 18px;
     }
 }
 
-.chunk-blog__comments ul {
+.chunk-blog__comments .latest-comments ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.chunk-blog__comments ul li {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 80px 1fr max-content;
+.chunk-blog__comments .latest-comments ul li .comments-box{
     padding: 10px;
     background-color: hsl(var(--light)/0.2);
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 575px) {
-    .chunk-blog__comments ul li {
+    .chunk-blog__comments .latest-comments ul li {
         grid-template-columns: 80px 1fr;
         grid-auto-flow: row;
     }
 }
 
-.chunk-blog__comments ul li.children {
+.chunk-blog__comments .latest-comments ul li.children {
     margin-left: 120px;
 }
 
 @media screen and (max-width: 991px) {
-    .chunk-blog__comments ul li.children {
+    .chunk-blog__comments .latest-comments ul li.children {
         margin-left: 60px;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .chunk-blog__comments ul li.children {
+    .chunk-blog__comments .latest-comments ul li.children {
         margin-left: 30px;
     }
 }
 
-.chunk-blog__comments ul li p {
+.chunk-blog__comments .latest-comments ul li .comments-box {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 80px 1fr max-content;
+}
+
+.chunk-blog__comments .latest-comments ul li .comments-box p {
     font-size: 16px;
     margin-bottom: 8px;
 }
 
 @media screen and (max-width: 575px) {
-    .chunk-blog__comments ul li p {
+    .chunk-blog__comments .latest-comments ul li .comments-box p {
         font-size: 14px;
     }
 }
 
-.chunk-blog__comments ul li h4 {
+.chunk-blog__comments .latest-comments ul li .comments-box h4 {
     font-family: var(--body-font);
     font-size: 14px;
     color: hsl(var(--dl-grey));
@@ -7292,16 +7323,16 @@ button.mfp-close {
 }
 
 @media screen and (max-width: 575px) {
-    .chunk-blog__comments ul li h4 {
+    .chunk-blog__comments .latest-comments ul li .comments-box h4 {
         font-size: 12px;
     }
 }
 
-.chunk-blog__comments ul li .comment {
+.chunk-blog__comments .latest-comments ul li .comments-box .comment {
     align-self: center;
 }
 
-.chunk-blog__comments ul li .comment-reply {
+.chunk-blog__comments .latest-comments ul li .comments-box .comment-reply {
     font-family: var(--heading-font);
     color: hsl(var(--base));
     align-self: flex-end;
@@ -7311,7 +7342,7 @@ button.mfp-close {
 }
 
 @media screen and (max-width: 575px) {
-    .chunk-blog__comments ul li .comment-reply {
+    .chunk-blog__comments .latest-comments ul li .comments-box .comment-reply {
         text-align: right;
         width: 100%;
         font-size: 16px;
@@ -7319,20 +7350,19 @@ button.mfp-close {
     }
 }
 
-.chunk-blog__comments ul li .comment-reply:hover {
+.chunk-blog__comments .latest-comments ul li .comments-box .comment-reply:hover {
     color: hsl(var(--base-d-200));
 }
 
-.chunk-blog__comments ul li .avatar {
+.chunk-blog__comments .latest-comments ul li .comments-box .comments-avatar {
     min-width: 80px;
     width: 80px;
     aspect-ratio: 1;
     overflow: hidden;
 }
 
-.chunk-blog__comments ul li .avatar img {
+.chunk-blog__comments .latest-comments ul li .comments-box .comments-avatar img {
     object-fit: cover;
-    height: 100%;
 }
 
 .chunk-blog__comment-form {

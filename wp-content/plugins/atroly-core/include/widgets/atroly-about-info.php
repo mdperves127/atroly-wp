@@ -3,7 +3,7 @@
 	 * Softec Footer full Widget
 	 *
 	 *
-	 * @author 		ThemePure
+	 * @author 		CreativeHunk
 	 * @category 	Widgets
 	 * @package 	Softec/Widgets
 	 * @version 	1.0.0

@@ -1844,7 +1844,7 @@ function get_comment_reply_link( $args = array(), $comment = null, $post = null 
 		$aria_label = $args['show_reply_to_text'] ? '' : sprintf( $args['reply_to_text'], get_comment_author( $comment ) );
 
 		$link = sprintf(
-			'<a rel="nofollow" class="comment-reply-link" href="%s" %s%s>%s</a>',
+			'<a rel="nofollow" class="comment-reply" href="%s" %s%s>%s</a>',
 			esc_url(
 				add_query_arg(
 					array(

@@ -77,10 +77,12 @@ function atroly_breadcrumb_func() {
         $hide_bg_img = function_exists('tpmeta_field')? tpmeta_field('atroly_check_bredcrumb_img') : 'on';
         // get_theme_mod
         $bg_img = get_theme_mod( 'breadcrumb_image' );
-        $breadcrumb_padding = get_theme_mod( 'breadcrumb_padding' );
+        $breadcrumb_padding = get_theme_mod( 'breadcrumb_padding', [
+            'padding-top' => '165px',
+            'padding-bottom' => '160px',
+        ]);
         $breadcrumb_bg_color = get_theme_mod( 'breadcrumb_bg_color', '#16243E' );
         $breadcrumb_bg_opacity = get_theme_mod( 'breadcrumb_bg_opacity', 0.8 );
-        $breadcrumb_shape_switch = get_theme_mod( 'breadcrumb_shape_switch', 'on' );
         if ( $hide_bg_img == 'off' ) {
             $bg_main_img = '';
         }else{  
@@ -88,6 +90,8 @@ function atroly_breadcrumb_func() {
         }
         
         ?>
+
+
 <section class="breadcrumb m-0" data-bg="<?php echo esc_url($bg_main_img);?>">
     <div class="breadcrumb-bg-overlay" style="background:<?php echo esc_attr($breadcrumb_bg_color);?>; opacity:<?php echo esc_attr($breadcrumb_bg_opacity);?>;"></div>
     <div class="container">

@@ -13,7 +13,7 @@
 
    // Button Text
    $header_top_button_switch = get_theme_mod( 'header_top_button_switch', false);
-   $header_top_button_text = get_theme_mod( 'header_button_text', __( 'Donate Now', 'atroly' ) );
+   $header_top_button_text = get_theme_mod( 'header_button_text', __( 'Book an Appointment', 'atroly' ) );
    $header_top_button_link = get_theme_mod( 'header_button_link', __( '#', 'atroly' ) );
 
    // header right
@@ -58,9 +58,12 @@
 
                     <!-- contact icon link -->
                     <div class="header-icon-link">
-                        <a href="tel:<?php esc_attr( $header_top_phone ); ?>">
+                        <a href="tel:<?php echo esc_attr( $header_top_phone ); ?>">
                             <i class="fa-solid fa-phone"></i>
-                            <span class="text"><?php esc_attr( $header_top_phone ); ?></span>
+                            <div class="text">
+                                <span><?php echo esc_html( $header_top_phone ); ?></span>
+                                <span><?php echo esc_html( $header_top_address_text ); ?></span>
+                            </div>
                         </a>
                     </div>
                 </div>

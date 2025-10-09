@@ -382,7 +382,7 @@ class Walker_Comment extends Walker {
 					'add_below' => $add_below,
 					'depth'     => $depth,
 					'max_depth' => $args['max_depth'],
-					'before'    => '<div class="reply">',
+					'before'    => '<div class="comment-reply">',
 					'after'     => '</div>',
 				)
 			)

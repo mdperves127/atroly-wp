@@ -230,30 +230,28 @@ if ( !function_exists( 'atroly_comment' ) ) {
     function atroly_comment( $comment, $args, $depth ) {
         $GLOBAL['comment'] = $comment;
         extract( $args, EXTR_SKIP );
-        $args['reply_text'] = '<div class="postbox__comment-reply"><span>Reply</span>
+        $args['reply_text'] = '<div class="comment-reply"><span>Reply</span>
     </div>';
         $replayClass = 'comment-depth-' . esc_attr( $depth );
         ?>
 
 
 <li id="comment-<?php comment_ID();?>" class="comment-list">
-    <div class="atroly-postbox-comment-box border-mr p-relative">
-        <div class="atroly-postbox-comment-box-inner d-flex">
-            <div class="atroly-postbox-comment-avater">
-            <?php print get_avatar( $comment, 102, null, null, [ 'class' => [] ] );?>
-            </div>
-            <div class="atroly-postbox-comment-content">
-                <div class="atroly-postbox-comment-author d-flex align-items-center">
-                    <h5 class="atroly-postbox-comment-name"><?php print get_comment_author_link();?></h5>
-                    <p class="atroly-postbox-comment-date"><?php the_time( get_option('date_format') ); ?></p>
-                </div>
-                <?php comment_text();?>
-                <?php comment_reply_link( array_merge( $args, [ 'depth' => $depth, 'max_depth' => $args['max_depth'] ] ) );?>
-            </div>
+
+
+
+    <div class="comments-box">
+        <div class="avatar">
+        <?php print get_avatar( $comment, 102, null, null, [ 'class' => [] ] );?>
         </div>
+            <div class="comment">
+                <?php comment_text();?>
+                <div class="avatar-name">
+                    <h4><?php print get_comment_author_link();?></h4>
+                </div>
+            </div>
+        <?php comment_reply_link( array_merge( $args, [ 'depth' => $depth, 'max_depth' => $args['max_depth'] ] ) );?>
     </div>
-
-
 
     <?php
     }

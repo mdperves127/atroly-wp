@@ -13,7 +13,7 @@
 
    // Button Text
    $header_top_button_switch = get_theme_mod( 'header_top_button_switch', false);
-   $header_top_button_text = get_theme_mod( 'header_button_text', __( 'Donate Now', 'atroly' ) );
+   $header_top_button_text = get_theme_mod( 'header_button_text', __( 'Book an Appointment', 'atroly' ) );
    $header_top_button_link = get_theme_mod( 'header_button_link', __( '#', 'atroly' ) );
 
    // header right

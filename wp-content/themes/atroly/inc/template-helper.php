@@ -401,20 +401,20 @@ function atroly_copyright_text() {
  */
 
 if ( !function_exists( 'atroly_post_pagination' ) ) {
-function atroly_post_pagination() {
-    $pages = paginate_links( array( 
-        'type' => 'array',
-        'prev_text' => '<i class="fas fa-regular fa-arrow-left"></i>',
-        'next_text' => '<i class="fas fa-regular fa-arrow-right"></i>',
-    ) );
-        if( $pages ) {
-        echo '<div class="chunk-pagination wow animate__animated animate__fadeInUp"><div class="chunk-pagination__wrap"> <nav ><ul>';
-        foreach ( $pages as $page ) {
-            echo "<li>$page</li>";
+    function atroly_post_pagination() {
+        $pages = paginate_links( array( 
+            'type' => 'array',
+            'prev_text' => '<i class="fas fa-regular fa-arrow-left"></i>',
+            'next_text' => '<i class="fas fa-regular fa-arrow-right"></i>',
+        ) );
+            if( $pages ) {
+            echo '<div class="chunk-pagination wow animate__animated animate__fadeInUp"><div class="chunk-pagination__wrap"> <nav ><ul>';
+            foreach ( $pages as $page ) {
+                echo "<li>$page</li>";
+            }
+            echo '</ul></nav> </div> </div>';
         }
-        echo '</ul></nav> </div> </div>';
     }
-}
 }
 
 
@@ -625,22 +625,30 @@ function atroly_blog_social_share(){
     $end_class = has_tag() ? 'text-lg-end' : 'text-lg-start';
 
     if(!empty($atroly_singleblog_social)) : ?>
-
-<div class="col-lg-5 col-md-5">
-    <div class="postbox__details-share atroly-postbox-share-social text-md-end <?php echo esc_attr($end_class); ?>">
-        <div class="atroly-footer-widget-social">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo esc_url($post_url);?>"
-                target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo esc_url($post_url);?>" target="_blank"><i
-                    class="fa-brands fa-facebook"></i></a>
-            <a href="https://twitter.com/share?url=<?php echo esc_url($post_url);?>" target="_blank"><i
-                    class="fa-brands fa-twitter"></i></a>
-            <a href="http://pinterest.com/pin/create/button/?url=<?php echo esc_url($post_url);?>" target="_blank"><i
-                    class="fa-brands fa-pinterest-p"></i></a>
-        </div>
-    </div>
-</div>
-<?php endif ; 
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo esc_url($post_url);?>" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a  href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo esc_url($post_url);?>"
+                target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a  href="https://twitter.com/share?url=<?php echo esc_url($post_url);?>" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://pinterest.com/pin/create/button/?url=<?php echo esc_url($post_url);?>" target="_blank">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+            </li>
+        </ul>
+    <?php endif ; 
 
 }
 

@@ -340,7 +340,7 @@ class ATROLY_Team_Details extends Widget_Base {
             [
                 'label' => esc_html__('Email', 'atrolycore'),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => esc_html__('info@themepure.com', 'atrolycore'),
+                'default' => esc_html__('info@creativehunk.com', 'atrolycore'),
                 'label_block' => true,
             ]
         );
@@ -350,7 +350,7 @@ class ATROLY_Team_Details extends Widget_Base {
             [
                 'label' => esc_html__('Email Url', 'atrolycore'),
                 'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => esc_html__('info@themepure.com', 'atrolycore'),
+                'default' => esc_html__('info@creativehunk.com', 'atrolycore'),
                 'label_block' => true,
             ]
         );
