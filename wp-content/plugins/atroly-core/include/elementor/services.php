@@ -125,9 +125,6 @@ class ATROLY_Services extends Widget_Base {
                 'type' => Controls_Manager::SELECT,
                 'options' => [
                     'layout-1' => esc_html__('Layout 1', 'atrolycore'),
-                    'layout-2' => esc_html__('Layout 2', 'atrolycore'),
-                    'layout-3' => esc_html__('Layout 3', 'atrolycore'),
-                    'layout-4' => esc_html__('Layout 4', 'atrolycore'),
                 ],
                 'default' => 'layout-1',
             ]
@@ -138,6 +135,24 @@ class ATROLY_Services extends Widget_Base {
         // title/content
         $this->atroly_section_title_render_controls('section', 'Section Title', 'Sub Title', 'your title here', $default_description = 'Hic nesciunt galisum aut dolorem aperiam eum soluta quod ea cupiditate.', 'layout-1' );
 
+        //Service Content
+        $this->start_controls_section(
+            'atroly_services_content',
+            [
+                'label' => esc_html__('Services Content', 'atrolycore'),
+                'description' => esc_html__( 'Control all the style settings from Style tab', 'atrolycore' ),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+        );
+
+
+
+        
+
+
+
+
+        $this->end_controls_section();
         // Service group
         $this->start_controls_section(
             'atroly_services',
@@ -147,6 +162,7 @@ class ATROLY_Services extends Widget_Base {
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
+
 
         $repeater = new \Elementor\Repeater();
 

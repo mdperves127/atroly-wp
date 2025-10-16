@@ -17,6 +17,7 @@
     // theme
     $footer_bg_img = get_theme_mod( 'footer_bg_image' );
     $footer_bg_color = get_theme_mod( 'footer_bg_color', '#0A1D33' );
+    $footer_bg_opacity = get_theme_mod( 'footer_bg_opacity', '0.8' );
     $theme_bg = $footer_bg_img ? "background-image:url({$footer_bg_img});" : "background-color:{$footer_bg_color};";
 
     // page
