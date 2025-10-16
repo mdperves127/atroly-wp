@@ -732,7 +732,7 @@ function footer_layout_section()
             'settings' => 'footer_bg_opacity',
             'label'    => __('Footer BG Opacity', 'atroly'),
             'section'  => 'footer_layout_section',
-            'default'  => 0.8,
+            'default'  => 1,
             'choices'  => [
                 'min'  => 0.1,
                 'max'  => 1,

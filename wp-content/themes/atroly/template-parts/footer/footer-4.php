@@ -17,8 +17,8 @@
     // theme
     // $footer_bg_img = get_theme_mod( 'footer_bg_image' );
     $footer_bg_color = get_theme_mod( 'footer_bg_color', '#1C1E21' );
+    $footer_bg_opacity = get_theme_mod( 'footer_bg_opacity', '1' );
     // $theme_bg = $footer_bg_img ? "background-image:url({$footer_bg_img});" : "background-color:{$footer_bg_color};";
-
     // page
     // $atroly_footer_bg_image = function_exists('tpmeta_image_field')? tpmeta_image_field('atroly_footer_bg_image') : '';
     // $atroly_footer_bg_color = function_exists('tpmeta_field')? tpmeta_field('atroly_footer_bg_color') : '';

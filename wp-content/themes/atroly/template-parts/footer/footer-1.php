@@ -19,7 +19,7 @@
     // theme
     $footer_bg_img = get_theme_mod( 'footer_bg_image' );
     $footer_bg_color = get_theme_mod( 'footer_bg_color', '#1D1E20' );
-    $footer_bg_opacity = get_theme_mod( 'footer_bg_opacity', 0.8 );
+    $footer_bg_opacity = get_theme_mod( 'footer_bg_opacity', '1' );
 
     // page
     $atroly_footer_bg_image = function_exists('tpmeta_image_field')? tpmeta_image_field('atroly_footer_bg_image') : '';
